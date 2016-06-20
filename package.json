@@ -1,0 +1,40 @@
+{
+  "name": "hacktrec.github.io",
+  "version": "1.0.0",
+  "description": "HackTREC'16 WebSite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacktrec/hacktrec.github.io.git"
+  },
+  "keywords": [
+    "Hack",
+    "TREC",
+    "HackTREC"
+  ],
+  "author": "phoenix1796",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hacktrec/hacktrec.github.io/issues"
+  },
+  "homepage": "https://github.com/hacktrec/hacktrec.github.io#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-flatten": "^0.2.0",
+    "gulp-html-replace": "^1.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-server-livereload": "^1.8.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.5",
+    "imagemin-mozjpeg": "^6.0.0"
+  }
+}
