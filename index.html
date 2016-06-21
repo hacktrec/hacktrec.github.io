@@ -10,7 +10,7 @@
   <script src="js/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse center-block" id="navbar" style="padding-left: 5vh;">
+<nav class="navbar navbar-inverse center-block" id="navbar" style="padding-left: 5vh;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
@@ -71,11 +71,13 @@
           Sign up to be reminded when registration opens. We got you.
         </div>
         <br>
-        <a href="contact.html">
-        <div class="register-contact-box contact-btn">
-          Stay Notified
+        <div class="row">
+        <input type="email" placeholder="Your Email Address Here" class="form-control center-block" id="email" style="font-size:2vh;width:40vw;">
+        <!--<a href="contact.html">-->
+          <div id="divbtn" class="register-contact-box contact-btn" onclick="sendemail()">
+          Submit
         </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -108,11 +110,51 @@ function checkScroll(){
     //  $('.navbar').removeClass('sticky');
   }
 }
-
 if($('.navbar').length > 0){
   $(window).on("scroll load resize", function(){
       checkScroll();
   });
 }
+</script>
+<script src="https://parse.com/downloads/javascript/parse-1.6.14.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  function sendemail(){
+    var btn_mine=document.getElementById("divbtn");
+    if(document.getElementById("email").value)
+    {
+      btn_mine.textContent = "Sending Your EmailID to the Wizard ;)";
+      new_email.save({
+        email:document.getElementById("email").value
+      },
+        {
+          success:function(new_email){
+            btn_mine.textContent="Done";
+          },
+          error:function (new_email,error) {
+            btn_mine.textContent="error , in submission , please try again";
+          }
+        }
+      );
+    }
+    else {
+      btn_mine.textContent = "Atleast write something in the box above , mate."
+    }
+  }
+  Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz", "U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua");
+  Parse.serverURL = 'https://parseapi.back4app.com'
+  var email = Parse.Object.extend("email");
+  var new_email = new email();
+  /*new_email.save({
+    email:"asd@gmail.com"
+  },
+    {
+      success:function(new_email){
+        console.log("Successful");
+      },
+      error:function (new_email,error) {
+        console.log("Error:",error);
+      }
+    }
+  );*/
 </script>
 </html>

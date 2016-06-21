@@ -51,6 +51,14 @@ html, body {
     border-radius: .25em;
     transition: opacity .25s ease,background-color .25s ease,color .25s ease,background .25s ease,box-shadow .25s ease;
 }
+.contact-btn {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+
+}
 .register{
   background-color: #bef2ce;
 }
