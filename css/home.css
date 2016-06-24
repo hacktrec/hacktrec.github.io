@@ -5,6 +5,19 @@ html, body {
   margin: 0 0 0 0;
   background-color: #fcdfa6/*#fcdfa6*/;/*#cf7a22*/
 }
+.foot{
+  color:white;
+}
+.foot a{
+  text-decoration: none;
+  color:inherit;
+  font-family: 'lato';
+  font-size: 4vh;
+  font-weight: bold;  
+}
+.foot a:hover{
+  color:#056495;
+}
 #compass {
     height: 46px;
     padding: 0;
