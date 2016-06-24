@@ -10,14 +10,31 @@
   <script src="https://use.fontawesome.com/dc85fbca38.js" async></script>
 </head>
 <body>
+<div class="custom-menu-wrapper navbar is-center">
+  <div class="pure-menu custom-menu custom-menu-top">
+      <a href="#" class="pure-menu-heading custom-menu-brand">HackTREC</a>
+      <div class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></div>
+  </div>
+  <div class=" is-center pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+      <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+          <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+          <li class="pure-menu-item"><a href="#register" class="pure-menu-link">Register</a></li>
+          <li class="pure-menu-item"><a href="#sponsor" class="pure-menu-link">Sponsors</a></li>
+      </ul>
+  </div>
+</div>
 <div class="pure-g home">
   <div class="pure-u-1 landing" id="landing">
+    <div class="cloud" style="position:absolute;top:15vh;"></div>
+    <div class="cloud cloud1" style="position:absolute;top:32vh;"></div>
+    <div class="cloud2" style="position:absolute;top:50vh;"></div>
     <div class="bottom-wrapper">
       <img src="img/logo.png" alt="" class="logo is-center"/>
       <img src="img/mounts.svg" alt="" class="mountains is-center"/>
     </div>
   </div>
-  <div class="pure-g about">
+  <div class="pure-g about" id="about">
     <div class="pure-u-1 pure-u-lg-2-5 about-heading">What is HackTREC?</div>
     <div class="pure-u-1 pure-u-lg-3-5 about-desc">
       HackTREC is a place to innovate without any restraints or distractions.
@@ -31,10 +48,10 @@
       <div class="register-heading">
         Registration opens soon!
       </div>
+      <br>
       <div class="register-desc">
         Sign up to be reminded when registration opens.
       </div>
-<!-- id: divbtn -> regbtn -->
       <br>
       <div class="" id="register-form">
         <input type="email" id="email" class="pure-input-rounded is-center">
@@ -63,7 +80,68 @@
       </div>
     </div>
   </div>
+  <div class="pure-u-1" style="text-align:center;background-color:black;color:white;font-size:2vh;" class="lato">
+    This site is under active development and is expected to change radically! <br>
+    Design inspiration from <a href="http://bitca.mp">bitca.mp</a> <br>
+  </div>
 </div>
 </body>
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script>
+(function (window, document) {
+document.getElementById('toggle').addEventListener('click', function (e) {
+    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+    document.getElementById('toggle').classList.toggle('x');
+});
+})(this, this.document);
+</script>
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+function checkScroll(){
+  var startY = $('.landing').height() *(3/4); //The point where the navbar changes in px
+  if($(window).scrollTop() > startY){
+      $('.navbar').addClass("scrolled");
+      $('.tuckedMenu').addClass("scrolled");
+  }else{
+      $('.navbar').removeClass("scrolled");
+      $('.tuckedMenu').removeClass("scrolled");
+  }
+}
+if($('.navbar').length > 0){
+  $(window).on("scroll load resize", function(){
+      checkScroll();
+  });
+}
+</script>
+<script type="text/javascript">
+  console.log("Welcome Hacker!\nIt's nice to see you have the curiosity to venture this far\nSend me a mail at abhishek.14bcs1017@abes.ac.in with a subject specifying that you saw this and any suggestions about the Hackathon.\nThis is a little social experiment i am conducting , so please don't tell anyone else about this. :) ;) :D ");
+</script>
+<script async src="https://parse.com/downloads/javascript/parse-1.6.14.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  function sendemail(){
+    var btn_mine=document.getElementById("regbtn");
+    if(document.getElementById("email").value)
+    {
+      btn_mine.textContent = "Sending Your EmailID to the Wizard ;)";
+      new_email.save({
+        email:document.getElementById("email").value
+      },
+        {
+          success:function(new_email){
+            btn_mine.textContent="Done";
+          },
+          error:function (new_email,error) {
+            btn_mine.textContent="error , in submission , please try again";
+          }
+        }
+      );
+    }
+    else {
+      btn_mine.textContent = "Atleast write something in the box above , mate."
+    }
+  }
+  Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz", "U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua");
+  Parse.serverURL = 'https://parseapi.back4app.com'
+  var email = Parse.Object.extend("email");
+  var new_email = new email();
+</script>
 </html>
