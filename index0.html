@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HackTREC</title>
+  <!-- build:css /css/tidy.css-->
+  <link rel="stylesheet" href="css/home.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- /build -->
+</head>
+<body>
+<nav class="navbar navbar-inverse center-block" id="navbar" style="padding-left: 5vh;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+            &#9776;
+          <!--  <i class="glyphicon glyphicon-menu-hamburger"></i>-->
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="nav navbar-nav">
+            <li><a href="http://hacktrec.in#Home">Home</a></li>
+            <li><a href="http://hacktrec.in#About">About</a></li>
+            <li><a href="http://hacktrec.in#events">Events</a></li>
+            <li>
+                <img src="img/compass.svg" id="compass">
+            </li>
+            <li><a href="http://hacktrec.in#speakers">Speakers</a></li>
+            <li><a href="http://hacktrec.in#Sponsor">Sponsors</a></li>
+            <li><a href="http://hacktrec.in/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--Content Start-->
+<div class="home" id="Home">
+  <div class="sky"><!-- Relatively Positioned-->
+    <div class="img-container">
+      <div class="cloud" style="position:absolute;top:15vh;"></div>
+      <div class="cloud cloud1" style="position:absolute;top:32vh;"></div>
+      <div class="cloud2" style="position:absolute;top:50vh;"></div>
+      <img src="img/logo.png" alt="" class="logo center-block"/>
+      <img src="img/mounts.svg" alt="" class="mountains center-block"/>
+    </div>
+  </div>
+  <div class="about-us" id="About">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 black-shadow">
+        <h2 class="about-heading">What is HackTREC?</h2>
+      </div>
+      <div class="col-md-7 about-desc lato">
+        HackTREC is a place to innovate without any restraints or distractions.
+        You will have 36 hours to delve into your curiosities ,learn something new, and make something awesome.
+        Meet other enthusiastic hackers, push your boundaries, and realize the projects of your dreams!
+        <br>So , what are you waiting for ? Start packing your bags for this awesome adventure on 19,20,21 October 2016 @ ABES Engineering College
+      </div>
+    </div>
+  </div>
+  <div class="register" id="register">
+    <div class="row">
+      <div class="register-box">
+        <div class="register-heading black-shadow">
+          Register Soon!
+        </div>
+        <br>
+        <div class="register-desc">
+          Sign up to be reminded when registration opens. We got you.
+        </div>
+        <br>
+        <div class="row">
+        <input type="email" placeholder="Your Email Address Here" class="form-control center-block" id="email" style="font-size:2vh;width:40vw;">
+        <!--<a href="contact.html">-->
+          <div id="divbtn" class="register-contact-box contact-btn" onclick="sendemail()">
+          Submit
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sponsor" id="Sponsor">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 black-shadow">
+        <h2 class="sponsor-heading">
+          Sponsors
+        </h2>
+      </div>
+      <div class="col-md-7 sponsor-desc lato">
+        Interested in sponsoring? Email us at <a href="mailto:abhishek.14bcs1017@abes.ac.in">abhishek.14bcs1017@abes.ac.in</a>! We'd love to have you.
+      </div>
+    </div>
+  </div>
+  <div class="footer text-center" style="background-color:#30abd5;">
+    <div class="foot">
+      <div style="font-family:'Montserrat';font-size:5vh;">Find us at</div><br>
+      <a href="http://www.github.com/hacktrec" style="float:left;padding-left:10vw;">Github</a>
+      <a href="http://www.facebook.com/hacktrec">Facebook</a>
+      <a href="http://www.twitter.com/Hacktrec" style="float:right;padding-right:10vw;">Twitter</a>
+    </div>
+  </div>
+  <div style="width:100vw;background-color:black;color:white;font-size:2vh;" class="lato">
+This site is under active development and is expected to change radically! <br>
+    Initial design inspired from bitca.mp <br>
+    The compass in the navbar should have given that away :D
+  </div>
+</div>
+<!--Content End-->
+</body>
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $('.nav a').on('click', function() { if ($(window).width() < 800) { $('.navbar-toggle').click() } });
+    $('#compass').on('click', function() { $('#compass').attr("src", "img/compass.gif") })
+</script>
+<script src="js/scroll.js" charset="utf-8" async></script>
+<script type="text/javascript">
+function checkScroll(){
+  var startY = $('.sky').height() *(3/4); //The point where the navbar changes in px
+
+  if($(window).scrollTop() > startY){
+      $('.navbar').addClass("scrolled");
+    //  $('.navbar').addClass('sticky');
+  }else{
+      $('.navbar').removeClass("scrolled");
+    //  $('.navbar').removeClass('sticky');
+  }
+}
+if($('.navbar').length > 0){
+  $(window).on("scroll load resize", function(){
+      checkScroll();
+  });
+}
+</script>
+<script src="https://parse.com/downloads/javascript/parse-1.6.14.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  function sendemail(){
+    var btn_mine=document.getElementById("divbtn");
+    if(document.getElementById("email").value)
+    {
+      btn_mine.textContent = "Sending Your EmailID to the Wizard ;)";
+      new_email.save({
+        email:document.getElementById("email").value
+      },
+        {
+          success:function(new_email){
+            btn_mine.textContent="Done";
+          },
+          error:function (new_email,error) {
+            btn_mine.textContent="error , in submission , please try again";
+          }
+        }
+      );
+    }
+    else {
+      btn_mine.textContent = "Atleast write something in the box above , mate."
+    }
+  }
+  Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz", "U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua");
+  Parse.serverURL = 'https://parseapi.back4app.com'
+  var email = Parse.Object.extend("email");
+  var new_email = new email();
+</script>
+</html>

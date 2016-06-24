@@ -73,14 +73,14 @@ gulp.task('htmlmin',()=>{
 });
 //Watchers start here
 gulp.task('src-watch',()=>{
-    var CSSwatcher = gulp.watch('client/src/css/*',['cssopti']);
-    var JSwatcher = gulp.watch('client/src/js/*',['jsmin']);
-    var Imgwatcher = gulp.watch('client/src/img/*',['imagemin']);
-    var HTMLwatcher = gulp.watch('client/src/*',['htmlmin']);//Def tasks for HTML here
+    var CSSwatcher = gulp.watch('css/*',['cssopti']);
+  //  var JSwatcher = gulp.watch('js/*',['jsmin']);
+  //  var Imgwatcher = gulp.watch('img/*',['imagemin']);
+    //var HTMLwatcher = gulp.watch('client/src/*',['htmlmin']);//Def tasks for HTML here
     CSSwatcher.on('change', function(event) {
       console.log('<CSS>:File ' + event.path + ' was ' + event.type);
     });
-    JSwatcher.on('change', function(event) {
+  /*  JSwatcher.on('change', function(event) {
       console.log('<JS>:File ' + event.path + ' was ' + event.type);
     });
     Imgwatcher.on('change', function(event) {
@@ -88,5 +88,5 @@ gulp.task('src-watch',()=>{
     });
     HTMLwatcher.on('change',function(event){
       console.log('<HTML>:File ' + event.path + ' was ' + event.type);
-    });
+    });*/
 });
