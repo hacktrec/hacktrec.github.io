@@ -38,10 +38,10 @@ gulp.task('imagemin',function(){
     .pipe(gulp.dest('client/dist/img/'));
 });
 gulp.task('cssopti',function(){
-  gulp.src('client/src/css/*')
-  .pipe(uncss({
-    html:['client/src/*.html']
-  }))//Only keep used CSS
+  gulp.src('css/home.css')
+/*  .pipe(uncss({
+    html:['*.html']
+  }))//Only keep used CSS*/
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
@@ -51,7 +51,7 @@ gulp.task('cssopti',function(){
                     path.extname = ".min.css";
                     return path;
                     }))
-    .pipe(gulp.dest('client/dist/css/'));
+    .pipe(gulp.dest('css/'));
 });
 gulp.task('jsmin',()=>{
   gulp.src('client/src/js/*')

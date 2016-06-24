@@ -13,7 +13,7 @@ html, body {
   color:inherit;
   font-family: 'lato';
   font-size: 4vh;
-  font-weight: bold;  
+  font-weight: bold;
 }
 .foot a:hover{
   color:#056495;
@@ -139,8 +139,7 @@ html, body {
 }
 
 .navbar.scrolled {
-    background: rgb(167, 208, 92); //IE
-    background: rgb(167, 208, 92)//rgb(203, 232, 150); //NON-IE
+    background: rgb(167, 208, 92);
 }
 .nav{
   display: block;
