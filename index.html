@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/pure.min.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/css/home.min.css">
   <link rel="stylesheet" href="/css/grids-responsive-min.css">
-  <script src="https://use.fontawesome.com/dc85fbca38.js" async></script>
+  <script src="https://use.fontawesome.com/dc85fbca38.js" defer async></script>
 </head>
 <body>
 <div class="custom-menu-wrapper navbar is-center" id="navbar">
@@ -32,7 +32,7 @@
     <div class="cloud cloud1" style="position:absolute;top:32vh;"></div>
     <div class="cloud2" style="position:absolute;top:50vh;"></div>
     <div class="bottom-wrapper">
-      <img src="img/logo.png" alt="" class="logo is-center"/>
+      <img src="img/logo.min.compressio.png" alt="" class="logo is-center"/>
       <img src="img/mounts.svg" alt="" class="mountains is-center"/>
     </div>
   </div>
@@ -88,7 +88,7 @@
   </div>
 </div>
 </body>
-<script src="js/home.min.js" charset="utf-8" defer async></script>
+<script src="js/home.min.js" charset="utf-8" async></script>
 <script src="https://parse.com/downloads/javascript/parse-1.6.14.min.js" charset="utf-8"></script>
 <script type="text/javascript">
   function sendemail(){var e=A("regbtn");A("email").value?(e.textContent="Sending Your EmailID to the Wizard ;)",new_email.save({email:A("email").value},{success:function(t){e.textContent="Done"},error:function(t,n){e.textContent="error , in submission , please try again"}})):e.textContent="Atleast write something in the box above , mate."}var A=function(e){return document.getElementById(e)};Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz","U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua"),Parse.serverURL="https://parseapi.back4app.com";var email=Parse.Object.extend("email"),new_email=new email;
