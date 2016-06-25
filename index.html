@@ -10,7 +10,7 @@
   <script src="https://use.fontawesome.com/dc85fbca38.js" async></script>
 </head>
 <body>
-<div class="custom-menu-wrapper navbar is-center">
+<div class="custom-menu-wrapper navbar is-center" id="navbar">
   <div class="pure-menu custom-menu custom-menu-top">
       <a href="#" class="pure-menu-heading custom-menu-brand">HackTREC</a>
       <div class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></div>
@@ -58,7 +58,7 @@
       <div class="" id="register-form">
         <input type="email" id="email" class="pure-input-rounded is-center">
         <br>
-        <div type="submit" class="regbtn pure-button is-center" id="regbtn">Submit Email</div>
+        <div type="submit" class="regbtn pure-button is-center" id="regbtn" onclick="sendemail()">Submit Email</div>
       </div>
     </div>
   </div>
@@ -88,61 +88,9 @@
   </div>
 </div>
 </body>
-<script>
-(function (window, document) {
-document.getElementById('toggle').addEventListener('click', function (e) {
-    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
-    $('#tuckedMenu').toggleClass('scrolled');
-    document.getElementById('toggle').classList.toggle('x');
-});
-})(this, this.document);
-</script>
-<script src="js/jquery.min.js" charset="utf-8"></script>
-<script type="text/javascript">
-function checkScroll(){
-  var startY = $('.landing').height() *(3/4); //The point where the navbar changes in px
-  if($(window).scrollTop() > startY){
-      $('.navbar').addClass("scrolled");
-  }else{
-      $('.navbar').removeClass("scrolled");
-  }
-}
-if($('.navbar').length > 0){
-  $(window).on("scroll load resize", function(){
-      checkScroll();
-  });
-}
-</script>
-<script type="text/javascript">
-  console.log("Welcome Hacker!\nIt's nice to see you have the curiosity to venture this far\nSend me a mail at <abhishek.14bcs1017@abes.ac.in> with a subject specifying that you saw this and any suggestions about the Hackathon.\nThis is a little social experiment i am conducting , so please don't tell anyone else about this. :) ;) :D ");
-</script>
+<script src="js/home.min.js" charset="utf-8" defer async></script>
 <script src="https://parse.com/downloads/javascript/parse-1.6.14.min.js" charset="utf-8"></script>
 <script type="text/javascript">
-  function sendemail(){
-    var btn_mine=document.getElementById("regbtn");
-    if(document.getElementById("email").value)
-    {
-      btn_mine.textContent = "Sending Your EmailID to the Wizard ;)";
-      new_email.save({
-        email:document.getElementById("email").value
-      },
-        {
-          success:function(new_email){
-            btn_mine.textContent="Done";
-          },
-          error:function (new_email,error) {
-            btn_mine.textContent="error , in submission , please try again";
-          }
-        }
-      );
-    }
-    else {
-      btn_mine.textContent = "Atleast write something in the box above , mate."
-    }
-  }
-  Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz", "U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua");
-  Parse.serverURL = 'https://parseapi.back4app.com'
-  var email = Parse.Object.extend("email");
-  var new_email = new email();
+  function sendemail(){var e=A("regbtn");A("email").value?(e.textContent="Sending Your EmailID to the Wizard ;)",new_email.save({email:A("email").value},{success:function(t){e.textContent="Done"},error:function(t,n){e.textContent="error , in submission , please try again"}})):e.textContent="Atleast write something in the box above , mate."}var A=function(e){return document.getElementById(e)};Parse.initialize("RsPVCohgpk7WYrmTxtRMVJtg2Ew79nVBqU01Kojz","U9Yr9MT7rb30oee7K7XiJm4gMWfOafzbt0oGvQua"),Parse.serverURL="https://parseapi.back4app.com";var email=Parse.Object.extend("email"),new_email=new email;
 </script>
 </html>

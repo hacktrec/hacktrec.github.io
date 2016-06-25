@@ -54,13 +54,13 @@ gulp.task('cssopti',function(){
     .pipe(gulp.dest('css/'));
 });
 gulp.task('jsmin',()=>{
-  gulp.src('client/src/js/*')
+  gulp.src('js/*')
     .pipe(uglify())
     .pipe(rename((path)=>{
                     path.extname = ".min.js";
                     return path;
                     }))
-    .pipe(gulp.dest('client/dist/js/'));
+    .pipe(gulp.dest('js/'));
 });
 gulp.task('htmlmin',()=>{
   gulp.src('client/src/*')
