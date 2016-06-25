@@ -245,11 +245,11 @@ font-size: 3vh;
 .custom-menu-toggle .bar {
     background-color: white;
     display: block;
-    width: 20px;
-    height: 2px;
+    width: 3vw;
+    height: 5vh;
     border-radius: 100px;
     position: absolute;
-    top: 22px;
+    top: 2vh;
     right: 12px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
