@@ -23,7 +23,9 @@ a{
   overflow: hidden;
   height: 80vh;
   width: 100vw;
-  background: -moz-linear-gradient(bottom,#77add9,#b4ddf0);
+  background: -webkit-linear-gradient(bottom, #77add9, #b4ddf0);
+  background: -o-linear-gradient(bottom, #77add9, #b4ddf0);
+  background: linear-gradient(to top, #77add9, #b4ddf0);
   position:relative;
 }
 .logo{
