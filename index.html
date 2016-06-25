@@ -21,6 +21,8 @@
           <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
           <li class="pure-menu-item"><a href="#register" class="pure-menu-link">Register</a></li>
           <li class="pure-menu-item"><a href="#sponsor" class="pure-menu-link">Sponsors</a></li>
+          <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">ContactUs</a></li>
+          <li class="pure-menu-item"><a href="volunteer.html" class="pure-menu-link">Volunteer</a></li>
       </ul>
   </div>
 </div>
@@ -90,6 +92,7 @@
 (function (window, document) {
 document.getElementById('toggle').addEventListener('click', function (e) {
     document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+    $('#tuckedMenu').toggleClass('scrolled');
     document.getElementById('toggle').classList.toggle('x');
 });
 })(this, this.document);
@@ -100,10 +103,8 @@ function checkScroll(){
   var startY = $('.landing').height() *(3/4); //The point where the navbar changes in px
   if($(window).scrollTop() > startY){
       $('.navbar').addClass("scrolled");
-      $('.tuckedMenu').addClass("scrolled");
   }else{
       $('.navbar').removeClass("scrolled");
-      $('.tuckedMenu').removeClass("scrolled");
   }
 }
 if($('.navbar').length > 0){

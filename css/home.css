@@ -188,7 +188,6 @@ a{
 background-color: transparent;
 font-family: 'avenir';
 font-size: 3vh;
-
 }
 
 .navbar.scrolled {
@@ -311,7 +310,6 @@ font-size: 3vh;
     .custom-menu-bottom {
         position: absolute;
         width: 100%;
-        border-top: 1px solid #eee;
         background-color: #808080\9;
         z-index: 100;
     }
