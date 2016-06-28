@@ -5,11 +5,38 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
    viewBox="0 0 1144.713 990.20574"
    height="279.45807mm"
-   width="323.06345mm">
+   width="323.06345mm"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/run/media/achopra/064AABE84AABD32B/PC/repos/hacktrec-site/img/logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="0.33705561"
+     inkscape:cx="815.77454"
+     inkscape:cy="340.09763"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4160" />
   <defs
      id="defs4" />
   <metadata
@@ -20,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -33,19 +60,21 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot4136"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="matrix(2.475736,0,0,2.6620641,-43.874585,-234.3763)"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#009688;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         transform="matrix(2.475736,0,0,2.6620641,-43.874585,-234.3763)"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><flowRegion
            id="flowRegion4138"><rect
              id="rect4140"
              width="86.8731"
              height="29.294416"
              x="125.25892"
              y="168.47873"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#009688;fill-opacity:1;" /></flowRegion><flowPara
            id="flowPara4142"
-           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:Aroly;-inkscape-font-specification:'Aroly, Italic';text-align:start;letter-spacing:-0.47185728px;writing-mode:lr-tb;text-anchor:start">HACK</flowPara></flowRoot>      <text
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.06485128px;line-height:125%;font-family:Aroly;-inkscape-font-specification:'Aroly, Italic';text-align:start;letter-spacing:-0.47185728px;writing-mode:lr-tb;text-anchor:start;fill:#9c27b0;fill-opacity:1">HACK</flowPara></flowRoot>      <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.54369736px;line-height:122.00000286%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Semi-Bold';text-align:start;letter-spacing:-8.07888699px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.54369736px;line-height:122.00000286%;font-family:FreeSans;-inkscape-font-specification:'FreeSans, Semi-Bold';text-align:start;letter-spacing:-8.07888699px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffc107;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          x="243.47092"
          y="267.76569"
          id="text4144"
@@ -53,10 +82,10 @@
            id="tspan4146"
            x="243.47092"
            y="267.76569"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.31554794px;line-height:122.00000286%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;letter-spacing:-8.61747932px;writing-mode:lr-tb;text-anchor:start;fill:#001242;fill-opacity:1">T<tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32.31554794px;line-height:122.00000286%;font-family:Ailerons;-inkscape-font-specification:'Ailerons, Normal';text-align:start;letter-spacing:-8.61747932px;writing-mode:lr-tb;text-anchor:start;fill:#ff5722;fill-opacity:1">T<tspan
    id="tspan4589"
-   style="letter-spacing:-11.4935627px;fill:#001242;fill-opacity:1">R</tspan><tspan
-   style="letter-spacing:-10.66413021px;fill:#001242;fill-opacity:1"
+   style="letter-spacing:-11.4935627px;fill:#ff5722;fill-opacity:1">R</tspan><tspan
+   style="letter-spacing:-10.66413021px;fill:#ff5722;fill-opacity:1"
    id="tspan4285">E</tspan>C</tspan></text>
     </g>
   </g>
