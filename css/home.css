@@ -2,6 +2,7 @@ html,body{
   width: 100vw;
   height:100vh;
   color:rgba(0,0,0,0.87);
+  font-family: 'Roboto', sans-serif;
 }
 a{
   text-decoration: none;
@@ -18,15 +19,10 @@ a{
   position: absolute;
   bottom: 0;
 }
-/**/
-
 .landing{
   overflow: hidden;
   height: 80vh;
   width: 100vw;
-  /*background: -webkit-linear-gradient(bottom, #77add9, #b4ddf0);
-  background: -o-linear-gradient(bottom, #77add9, #b4ddf0);
-  background: linear-gradient(to top, #77add9, #b4ddf0);*/
   background-color: #80d8ff;
   position:relative;
 }
@@ -37,11 +33,7 @@ a{
 .mountains{
   width:80vw;
 }
-@media (orientation: landscape) {
-  .cloud{
-    height:15vh;
-  }
-}
+
 .cloud {
   /*bottom: 100px;*/
   width:20vw;
@@ -71,9 +63,12 @@ a{
     left: 100vw;
   }
 }
+.hoverText{
+  transition-duration: 0.2s;
+}
 .about{
   background-color: #3f51b5/*#fcdfa6*/;
-  text-align: left;
+  text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
   padding-top: 4vh;
@@ -81,10 +76,9 @@ a{
 }
 .about-heading{
   color:white;
-  font-size: 10vh;
-  transition-duration: 0.2s;
+  font-size: 9vh;
 }
-.about-heading:hover{
+.hoverText:hover{
   transform: translate(5px);
   text-shadow: -7px 7px 1px #000;
 }
@@ -117,7 +111,7 @@ a{
 }
 .regbtn{
   max-width:15vw;
-  background-color: #ffc400/*#cbe896*/;
+  background-color:#ffc107;
 }
 @media (max-width: 1000px){
   .regbtn{
@@ -125,7 +119,8 @@ a{
   }
 }
 .sponsor{
-  background-color: #795548/*#e7d350*/;
+  color:white;
+  background-color: #009688/*#e7d350*/;
   text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
@@ -146,7 +141,6 @@ a{
 .foot a{
   text-decoration: none;
   color:inherit;
-  font-family: 'lato';
   font-size: 4vh;
   font-weight: bold;
 }
@@ -167,7 +161,6 @@ a{
     -ms-transition: background 0.6s ease-out;
     transition: background 0.6s ease-out;
 background-color: transparent;
-font-family: 'avenir';
 font-size: 3vh;
 }
 
@@ -325,6 +318,14 @@ font-size: 3vh;
 
 }
 /*Navbar:end*/
+@media (orientation: landscape) {
+  .cloud{
+    height:15vh;
+  }
+  .about{
+    text-align: left;
+  }
+}
 @media (max-width: 50em) {
   .landing{
     height: 50vh;

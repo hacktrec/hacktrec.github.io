@@ -5,11 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HackTREC'16</title>
   <link rel="stylesheet" href="/css/pure.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/home.min.css">
   <link rel="stylesheet" href="/css/grids-responsive-min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <script src="https://use.fontawesome.com/dc85fbca38.js" defer async></script>
+  <script type="text/javascript">
+    setTimeout(function(){
+    var offset;
+    var path = document.getElementById('loady') ;
+    var len = path.getTotalLength();
+    function paint() {
+      path.style.strokeDashoffset = len;
+      path.style.strokeDasharray = len + ',' + len;
+      animate();
+    }
+    function animate() {
+      if (!offset) offset = len;
+      offset -= 3;
+      path.style.strokeDashoffset = offset;
+      if (offset < 0)
+        window.cancelAnimationFrame(anim);
+      else anim = window.requestAnimationFrame(function() {
+        animate();
+      });
+    }
+    paint();
+  },0);
+    setTimeout(function loaded(){
+      document.getElementById('loader').style.opacity='0';
+      document.getElementById('img-loader').style.top='10vh';
+      setTimeout(function(){document.getElementById('loader').style.display='none';},1500);
+      document.getElementById('loadcloud').style.left='0';
+      /*load cloud*/
+    },1500);
+  </script>
 </head>
+<style media="screen">
+path {
+  fill: aliceblue;
+  stroke: lightskyblue;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+#loadcloud{
+  position:fixed;
+  height:25vh;
+  top:60vh;
+  left:47vw;
+  transition: all 2s;
+}
+  .loader{
+    position:fixed;width:100vw;height:100vh;background-color:#06b6ff;z-index:1000;
+    transition: all 2s;
+  }
+  .img-loader{
+    height:50vh;
+    width: 22vw;
+    position:fixed;top:15vh;left:40vw;
+    transition:all 1s;
+  }
+  @media (orientation: portrait) {
+    .img-loader{
+      left:22vw;
+      width:55vw;
+    }
+    #loadcloud{
+      left:35vw;
+    }
+  }
+</style>
 <body>
+  <div class="loader" id="loader">
+    <img src="img/logo_loader.png" id="img-loader" class="is-center img-loader" alt="">
+    <svg id="loadcloud" viewBox='0 0 105 105'>
+        <filter id='shadow'>
+          <feGaussianBlur in='SourceAlpha' stdDeviation='2' />
+          <feOffset dx='2' dy='0' result='blur' />
+          <feMerge>
+            <feMergeNode in='blur' />
+            <feMergeNode in='SourceGraphic' />
+          </feMerge>
+        </filter>
+        <path id="loady" d='M 25,60
+                 a 20,20 1 0,0 0,40
+                 h 50
+                 a 20,20 1 0,0 0,-40
+                 a 10,10 1 0,0 -15,-10
+                 a 15,15 1 0,0 -36,10
+                 z' filter='url(#shadow)' />
+    </svg>
+  </div>
 <div class="custom-menu-wrapper navbar is-center" id="navbar">
   <div class="pure-menu custom-menu custom-menu-top">
       <a href="#" class="pure-menu-heading custom-menu-brand">HackTREC</a>
@@ -36,7 +121,7 @@
     </div>
   </div>
   <div class="pure-g about" id="about">
-    <div class="pure-u-1 pure-u-lg-2-5 about-heading">What is HackTREC?</div>
+    <div class="pure-u-1 pure-u-lg-2-5 about-heading hoverText">What is HackTREC?</div>
     <div class="pure-u-1 pure-u-lg-3-5 about-desc">
       HackTREC is a place to innovate without any restraints or distractions.
       You will have 36 hours to delve into your curiosities ,learn something new, and make something awesome.
@@ -62,7 +147,7 @@
     </div>
   </div>
   <div class="pure-g sponsor" id="sponsor">
-    <div class="pure-u-1 pure-u-lg-2-5 sponsor-heading">
+    <div class="hoverText pure-u-1 pure-u-lg-2-5 sponsor-heading">
       Sponsors
     </div>
     <div class="pure-u-1 pure-u-lg-3-5 sponsor-desc">
@@ -81,7 +166,7 @@
       </div>
     </div>
   </div>
-  <div class="pure-u-1" style="text-align:center;background-color:black;color:white;font-size:2vh;" class="lato">
+  <div class="pure-u-1" style="text-align:center;background-color:black;color:white;font-size:2vh;">
     This site is under active development and is expected to change radically! <br>
   </div>
 </div>
