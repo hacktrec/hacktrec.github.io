@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Allow: /volunteer.html
+Allow: /contact.html
+Allow: /img
+
+Sitemap: http://hacktrec.in/sitemap.xml
