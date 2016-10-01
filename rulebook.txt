@@ -1,0 +1,46 @@
+Hackathon Rules
+
+19th - 20th October 2016
+Duration 30 Hour (Overnight , contact organizers for further queries)
+
+We highly encourage all participants to attend the hackathon in-person, to meet other like-minded hackers and gain valuable insights from our sponsors about building amazing products!
+
+1. Fresh Code
+
+We all start coding at the same time. This is done to keep things fair. No one is allowed to come in and build on top of previous projects. It’s cool to work on designs beforehand, digital mockups, open source frameworks, and anything else available to everyone, but keep things within fair limits.
+
+2. Code Review
+
+Winning teams will be subject to a code-review at some point following the event or immediately before winning. This is to ensure that all code used is in fact fresh.
+
+3. Ownership and IP
+
+Teams have full ownership of everything they build at our event and are free to do with it as they wish.
+
+4. Team Size
+
+Teams of up to 4 humans are allowed. You can also add 1 cyborg, Furby, drone, or Sphero.
+
+5. Submissions
+
+Each hackathon has its individual hackathon.io page, which projects should be submitted on. Submissions take place after 30 hours of pure hacking.
+
+6. DEMO your Hack
+
+You must demo your hack in order to present. No slide-decks or Powerpoint will be allowed. Two minute presentation and one minute Q&A from Judges.
+
+7.Code of Conduct:
+You must abide by the Code of Conduct. We have a zero-tolerance policy for harassment. If you’re making others feel unsafe in anyway, we’ll kick you out. End of story.
+
+8. Have a damn good time!
+
+
+Judging:
+We rock with live DEMOS only! No exceptions. To win HackTREC, you will have to demo your product for at least 30 seconds, but don’t worry if your project is still not 100% perfected. Projects will be judged based on the following criteria:
+
+    Impact: How impactful will this solution be for it’s target audience? Is it scalable?
+    Creativity: How original is this solution?
+    Design: How well designed is this solution, from front end through to UI/UX?
+    Execution: How well executed is this solution from start to finish?
+
+Last thing.In this day and age of #selfies and #squad photos, it’s likely that photos and/or video will be taken at the event. By entering the venue, you’re giving us the OK to snap photos and post to social media.
