@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Slideshow</title>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style type="text/css">
+		               
+            .heading{
+            	  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+				  color: #fff;
+            }
+
+		</style>
+	</head>
+	<body >
+	  <div >
+		<div style="position: relative;overflow: hidden;width: 100%;">
+			<div class="deco deco--title"></div>
+			<div id="sponsor_slideshow" class="sponsor_slideshow">
+				<div class="sponsor_slide">
+					<h2 class="sponsor_slide__title sponsor_slide__title--preview">Company 1</h2>
+					<div class="sponsor_slide__item">
+						<div class="sponsor_slide__inner">
+							<img class="sponsor_slide__img sponsor_slide__img--small" src="img/sponsor.jpg" alt="Some image" />
+							<button class="action action--open" aria-label="View details">+</button>
+						</div>
+					</div>
+					<div class="sponsor_slide__content">
+						<div class="sponsor_slide__content-scroller">
+							<img class="sponsor_slide__img sponsor_slide__img--large" src="img/sponsor.jpg" alt="Some image" />
+							<div class="sponsor_slide__details">
+								<h2 class="sponsor_slide__title sponsor_slide__title--main">Company 1</h2>
+								<p class="sponsor_slide__description">Content</p>
+								<p class="sponsor_slide__description">Content</p>
+								<p class="sponsor_slide__description">Content</p>
+								<p class="sponsor_slide__description">Content</p>
+								<p class="sponsor_slide__description">Content</p>
+								<div>
+									<span class="sponsor_slide__price sponsor_slide__price--large"></span>
+									<a href="http://www.google.com" class="button button--buy">Company</a>
+								</div>
+							</div><!-- /slide__details -->
+						</div><!-- slide__content-scroller -->
+					</div><!-- slide__content -->
+				</div>
+				
+				
+				<button class="action action--close" aria-label="Close">x</i></button>
+			</div>
+		</div><!-- /container -->
+		</div>
+		
+      	<script src="js/sponsor_classie.js"></script>
+		<script src="js/sponsor_dynamics.min.js"></script>
+		<script src="js/sponsor_main.js"></script>
+		<script>
+			(function() {
+				document.documentElement.className = 'js';
+				var slideshow = new CircleSlideshow(document.getElementById('sponsor_slideshow'));
+			})();
+		</script>
+	</body>
+</html>

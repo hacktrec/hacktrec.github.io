@@ -1,157 +1,886 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HackTREC'16</title>
-  <link rel="stylesheet" href="/css/pure.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="/css/home.min.css">
-  <link rel="stylesheet" href="/css/grids-responsive-min.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <script src="https://use.fontawesome.com/dc85fbca38.js" defer async></script>
-  <script type="text/javascript">
-    setTimeout(function(){function e(){o.style.strokeDashoffset=l,o.style.strokeDasharray=l+","+l,t()}function t(){n||(n=l),n-=3,o.style.strokeDashoffset=n,0>n?window.cancelAnimationFrame(anim):anim=window.requestAnimationFrame(function(){t()})}var n,o=document.getElementById("loady"),l=o.getTotalLength();e()},0),setTimeout(function(){document.getElementById("loader").style.opacity="0",document.getElementById("img-loader").style.top="10vh",setTimeout(function(){document.getElementById("loader").style.display="none"},1500),document.getElementById("loadcloud").style.left="0"},1500);
-  </script>
-  <link rel="alternate" href="http://hacktrec.in" hreflang="en-in" />
-  <link rel="alternate" href="http://hacktrec.in" hreflang="en" />
-  <script type="application/ld+json">
-  {"@context":"http://schema.org","@type":"WebSite","name":"Hacktrec","alternateName":"HackTREC'16 //19-21 October 2016","url":"http://hacktrec.in"}
-  </script>
-  <!--<div itemscope itemtype="http://schema.org/SocialEvent">
-    <a itemprop="url" href="http://hacktrec.in"><div itemprop="name"><strong>HackTREC</strong></div>
-    </a>
-    <div itemprop="description">HackTREC is a place to enjoy 36 hours of Creating literally anything like IOT related projects to Portable Showers . You just need to be curious and show up at the venue ,we wil take care of the rest. Everyone can participate as an Innovator or a Hacker Guru( i.e. Innovator Team Coach)</div>
-    <div><meta itemprop="startDate" content="2016-10-19T12:00">Starts: 10/19/2016 12:00PM</div>
-    <meta itemprop="endDate" content="2016-10-21:00.000">Ends: 2016-10-21:00.000
-    </div>
-    <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-    <div itemprop="streetAddress">ABES Engineering College, Campus1, 19thKm Stone, Delhi-Hapur Bypass Road</div>
-    <div><span itemprop="addressLocality">Ghaziabad</span>, <span itemprop="addressRegion">Uttar Pradesh</span></div><div itemprop="addressCountry">India</div>
-  </div>-->
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hacktrec 2k17</title>
+		<link rel="shortcut icon" href="img/icon.png" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Barrio" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Arapey|Archivo+Black|Elsie+Swash+Caps|Playfair+Display|Anton|Rubik|Teko:600|Sacramento|Abril+Fatface|Cormorant+Garamond|Neucha|Unica+One|Old+Standard+TT" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link href='https://fonts.googleapis.com/css?family=Unica One' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arapey" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/lettereffect.css" />
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-80025408-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<meta name="google-site-verification" content="v9YNYKsyNsdiW6M-FhoPvItCp8xTEudAQyM1jgBinvI" />
-</head>
-<style media="screen">
-#loadcloud,.loader{transition:all 2s;position:fixed}path{fill:#f0f8ff;stroke:#87cefa;stroke-width:2;stroke-linejoin:round}#loadcloud{height:25vh;top:60vh;left:47vw}.loader{width:100vw;height:100vh;background-color:#06b6ff;z-index:1000}.img-loader{height:50vh;width:22vw;position:fixed;top:15vh;left:40vw;transition:all 1s}@media (orientation:portrait){.img-loader{left:22vw;width:55vw}#loadcloud{left:35vw}}
-</style>
-<body>
-  <div class="loader" id="loader">
-    <img src="img/logo_loader.min.png" id="img-loader" class="is-center img-loader" alt="">
-    <svg id="loadcloud" viewBox='0 0 105 105'>
-        <filter id='shadow'>
-          <feGaussianBlur in='SourceAlpha' stdDeviation='2' />
-          <feOffset dx='2' dy='0' result='blur' />
-          <feMerge>
-            <feMergeNode in='blur' />
-            <feMergeNode in='SourceGraphic' />
-          </feMerge>
-        </filter>
-        <path id="loady" d='M 25,60
-                 a 20,20 1 0,0 0,40
-                 h 50
-                 a 20,20 1 0,0 0,-40
-                 a 10,10 1 0,0 -15,-10
-                 a 15,15 1 0,0 -36,10
-                 z' filter='url(#shadow)' />
-    </svg>
-  </div>
-<div class="custom-menu-wrapper navbar is-center" id="navbar">
-  <div class="pure-menu custom-menu custom-menu-top">
-      <a href="#" class="pure-menu-heading custom-menu-brand">HackTREC</a>
-      <div class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></div>
-  </div>
-  <div class=" is-center pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-      <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-          <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
-          <li class="pure-menu-item"><a href="#register" class="pure-menu-link">Register</a></li>
-          <li class="pure-menu-item"><a href="#sponsor" class="pure-menu-link">Sponsors</a></li>
-          <li class="pure-menu-item"><a href="contact.html" class="pure-menu-link">ContactUs</a></li>
-      </ul>
-  </div>
-</div>
-<div class="pure-g home">
-  <div class="pure-u-1 landing" id="landing">
-    <img class="cloud " src="img/cloud.svg" style="top:32vh;z-index:2"/>
-    <img class="cloud cloud2" src="img/cloud.svg" style="top:11vh;"/>
-    <div class="bottom-wrapper">
-      <img src="img/logo.min.png" alt="" class="logo is-center"/>
-      <img src="img/mounts.svg" alt="" class="mountains is-center"/>
-    </div>
-  </div>
-  <div class="pure-g about" id="about">
-    <div class="pure-u-1 pure-u-lg-2-5 about-heading hoverText">What is HackTREC?</div>
-    <div class="pure-u-1 pure-u-lg-3-5 about-desc">
-      HackTREC is a place to innovate without any restraints or distractions.
-      You will have 30 hours to delve into your curiosities ,learn something new, and make something awesome.
-      Meet other enthusiastic hackers, push your boundaries, and realize the projects of your dreams!
-      <br>So , what are you waiting for ? Start packing your bags for this awesome adventure on 19-20 October 2016 @ ABES Engineering College
-    </div>
-  </div>
-  <div class="pure-u-1 register" id="register">
-    <div class="register-box is-center">
-      <div class="register-heading">
-        Registration opens soon!
-      </div>
-      <br>
-      <div class="register-desc">
-        Registrations Open , Click below to Register.
-      </div>
-      <br>
-      <div class="" id="register-form">
-        <br>
-        <a href="https://goo.gl/forms/ioniMh8BJFHxf5Vv1"><div type="submit" class="regbtn pure-button is-center" id="regbtn" onclick="sendemail()">Register Here!</div></a>
-      </div>
-    </div>
-  </div>
-  <div class="pure-g sponsor" id="sponsor">
-  <div class="pure-u-1 sponsor-heading">
-    Our Sponsors <br>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
-  </div>
-    <div class="pure-u-1 pure-u-lg-1-3 sponsor-heading">
-            <a href="https://gitlab.com"><img id="sponsor-img" class="hoverText" style="max-height: 15vh;" src="./img/gitlab_logo.svg"/></a>  
+		<link rel="stylesheet" type="text/css" href="css/team_icons.css" />
 
-      <a href="https://hackster.io"><img id="sponsor-img" class="hoverText" src="./img/hackster-dot-io-sticker.png"/></a>
-      <a href="https://exotel.in/"><img id="sponsor-img" class="hoverText" style="max-height: 20vh;" src="./img/exotel_logo.png"/></a>
-      <img id="sponsor-img" class="hoverText" src="./img/venturesity_logo.png"/>
-      <a href="http://jslovers.com"><img id="sponsor-img" style="max-height: 7vh;" class="hoverText" src="./img/jslovers_logo.png"/></a>
-    </div>
-    <div class="pure-u-1 pure-u-lg-1-3 sponsor-heading">
-      <a href="https://github.com"><img id="sponsor-img" class="hoverText" src="./img/GitHub_Logo.png"/></a>
-      <a href="https://www.meetup.com/IOT-NCR/"><img id="sponsor-img" class="hoverText" style="max-height: 15vh;" src="./img/iotncr_logo.jpg"/></a>
-      <a href="https://jetbrains.com/"><img id="sponsor-img" style="max-height: 25vh;" class="hoverText" src="./img/jetbrains_logo.png"/></a>
-      <a href="https://sandstorm.io"><img id="sponsor-img" style="max-height: 25vh;" class="hoverText" src="./img/sandstorm_logo.png"/></a>
+	    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+		<link rel="stylesheet" type="text/css" href="css/component2.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+			document.documentElement.className = 'js';
+		</script>
+		<script src="js/segment.min.js"></script>
+		<script src="js/d3-ease.v0.6.js"></script>
+		<script src="js/letters.js"></script><script src="js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script >
+            
+		    $(document).ready(function(){
+		    $("#show_dropdown").hide();
+		    $("#click_dropdown").click(function(){
+		        $("#show_dropdown").toggle();
+				
+		    });
+		});
+        </script>
+		<style type="text/css">
+            .body-1 {
+			font-family: 'Nunito', monospace;
+			color: #fff;
+			background-color: #001a33;
+			min-height: 100vh;
+		    }
+		    main {
+			position: relative;
+		    width: 100%;
+     		}
+            .rubik {
+				font-family: 'Nunito', monospace;
+				font-weight: 400;
+			}
 
-    </div>
-    <div class="pure-u-1 pure-u-lg-3-5 sponsor-desc">
-       Interested in sponsoring? <br>Email us at <a href="mailto:sponsor@hacktrec.in" style="color:rgb(204, 255, 255)"><u>sponsor@hacktrec.in</u></a>!<br> We'd love to have you.
-    </div>
-  </div>
-  <div class="pure-u-1" id="footer" style="background-color:#30abd5;">
-    <div class="foot">
-    <br>
-      <div class="pure-g is-center">
-      <a href="http://www.github.com/hacktrec" class="pure-u-1-5"><i class="fa fa-github"></i></a>
-      <div class="pure-u-1-5"></div>
-      <a href="http://www.facebook.com/hacktrec" class="pure-u-1-5"><i class="fa fa-facebook"></i></a>
-      <div class="pure-u-1-5"></div>
-      <a href="http://www.twitter.com/Hacktrec" class="pure-u-1-5"><i class="fa fa-twitter"></i></a>
-      <div class="pure-u-1" style="font-size:3vh;">
-        Created with <i class="fa fa-heart"></i> in India <br> by <a href="https://www.github.com/phoenix1796" style="font-size:4vh">Abhishek Chopra</a>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-<script src="js/home.min.js" charset="utf-8" async></script>
+     		.neucha {
+				font-family: 'Neucha', serif;
+			}
+
+     		.content {
+			position: relative;
+			display: grid;
+			align-content: center;
+			height: 100vh;
+			overflow: hidden;
+			min-height: 650px;
+		    }
+		    .content--layout {
+			grid-template-columns: 100%;
+			padding: 3em 0;
+		    }
+
+		   .demo-crossword {
+			color: #fff;
+			background-color: #001a33;
+            }
+
+            hr{
+            	color: #2D2D2D;
+            	border-color: #2D2D2D;
+            	border-style: solid;
+            }
+            
+            /* Common styles for the words */
+			.word {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 0;
+			cursor: default;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+        	}
+            
+            @media screen and (max-width: 50em) {
+				html, .body-1 {
+					overflow-x: hidden;
+					width: 100vw;
+					height: 100%;
+				}
+				.content {
+					height: auto;
+					min-height: 0;
+				}
+				.content--layout {
+					overflow: visible;
+				}
+			}
+        
+            .word--crossword {
+				font-size: 14vh;
+				font-family: 'Barrio', serif;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: #fff;
+				line-height: 0.9;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, 0.65em);
+				
+     		}
+	     		.word--crossword span {
+				text-align: center;	
+				display: block;
+			}
+
+			.word__cross {
+				pointer-events: none;
+				color: #000d1a;
+			}
+
+			.word__cross span {
+				opacity: 0;
+			}
+
+
+
+			.allerta {
+                font-family: "Allerta Stencil", Sans-serif;
+            }
+            .background{
+            	    background-image: url("./img/poster.jpg");
+				    width: 100%;
+				    max-height: 100%;
+				    background-position: center;
+				    background-repeat: no-repeat;
+				    background-size: cover;
+			 }
+			 @-webkit-keyframes rotateLoader {
+				to {
+					-webkit-transform: rotate3d(0, 0, 1, 360deg);
+					transform: rotate3d(0, 0, 1, 360deg);
+				}
+			}
+
+			@keyframes rotateLoader {
+				to {
+					-webkit-transform: rotate3d(0, 0, 1, 360deg);
+					transform: rotate3d(0, 0, 1, 360deg);
+				}
+			}
+
+			/* Content */
+			.content-letter-style {
+				position: relative;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				width: 100%;
+				height: 100vh;
+			}
+
+			.content--c7 {
+				color: #fff;
+				cursor:default; 
+			}
+
+			.slideshow,.slide {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+
+			.slide {
+				padding: 0 6vw;
+			}
+
+			.actions {
+				position: absolute;
+				right: 6vw;
+				bottom: 60px;
+				text-align: center;
+			}
+
+			/* Text styles */
+			.title {
+				margin: 0;
+				font-size: 5vw;
+				position: relative;
+			}
+
+			.hover-effect:hover {
+				color: #000d1a;
+			}
+
+			.title--style-7 {
+				font-family: 'Neucha', serif;
+				font-size: 4vw;
+				font-weight: 400;
+			}
+			.btn {
+				font-size: 0.885em;
+				font-weight: normal;
+				display: inline-block;
+				margin: 0 auto;
+				padding: 0.5em 0;
+				cursor: pointer;
+				text-align: center;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				pointer-events: auto;
+				color: #fff;
+				border: 0;
+				background: none;
+				font-family: 'Roboto Condensed', Avenir, sans-serif;
+				-webkit-transition: opacity 0.2s;
+				transition: opacity 0.2s;
+			}
+			.no-js .actions {
+				display: none;
+			}
+
+			.js .content-letter-style {
+				overflow: hidden;
+			}
+
+			
+
+			.js .slide {
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+
+			.js .slide:not(.slide--current) {
+				position: absolute;
+				top: 0;
+				pointer-events: none;
+				opacity: 0;
+			}
+
+
+			.btn:focus {
+				outline: none;
+			}
+
+			.btn:hover {
+				opacity: 0.5;
+			}
+
+			.btn--trigger{
+				margin: 0 0.5em;
+				border-bottom: 1px solid;
+			}
+
+			.btn--prev {
+				margin: 0 1.5em 0 0.5em;
+			}
+            
+            .actions {
+				position: absolute;
+				right: 6vw;
+				bottom: 60px;
+				text-align: center;
+			}
+            
+            @media screen and (max-width:60em) {
+			.content {
+				height: calc(100vh - 124px);
+			}
+		}
+
+		.decoline {
+			position: absolute;
+		}
+         
+         .slick-img{
+	  		display: block;
+				max-height: 20vh;
+				max-width: 10vw;
+				width: auto;
+  			height: auto;
+			}
+
+		 .sponsor-btn {
+			border: none;
+			font-family: inherit;
+			font-size: inherit;
+			color: inherit;
+			background: none;
+			cursor: pointer;
+			padding: 25px 80px;
+			display: inline-block;
+			margin: 15px 30px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 700;
+			outline: none;
+			position: relative;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		   }
+		   .btn:after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				transition: all 0.3s;
+			}
+
+			/* Pseudo elements for icons */
+			.btn:before{
+				font-family: 'icomoon';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				position: relative;
+				-webkit-font-smoothing: antialiased;
+			 }
+			    .btn-6 {
+				color: #fff;
+				background: #000d1a;
+				-webkit-transition: none;
+				-moz-transition: none;
+				transition: none;
+			    }
+
+			    .btn-6:active {
+				   top: 2px;
+			    }
+
+
+
+				 .btn-6e {
+				    border: 2px dashed #000d1a;
+				    border-radius: 15px;
+			     }
+
+			     .btn-6e:hover {
+				    background: transparent;
+				    color: #000d1a;
+			     }
+			     .sponsor-btn span {
+				  cursor: pointer;
+				  display: inline-block;
+				  position: relative;
+				  transition: 0.5s;
+				}
+
+				.sponsor-btn span:after {
+				  content: '\00bb';
+				  position: absolute;
+				  opacity: 0;
+				  top: 0;
+				  right: -20px;
+				  transition: 0.5s;
+				}
+
+				.sponsor-btn:hover span {
+				  padding-right: 25px;
+				}
+
+				.sponsor-btn:hover span:after {
+				  opacity: 1;
+				  right: 0;
+				}
+
+				.unica-one{
+					 font-family: 'Unica One';
+				}
+
+				
+
+		</style>
+	</head>
+
+	<body class="demo-1">
+
+	       <div class="nbs unica-one " >
+			  <a href="#hacktrec-info" class=" nb nbi nbsb4"><i class="fa fa-question"></i> <span class="w3-xlarge">What is hack-TREC</span></a>
+			  <a href="#register" class="nb nbi nbsb3"><i class="fa fa-pencil"></i><span class="w3-xlarge">Register</span></a>
+			  <a href="#sponsors" class="nb nbi nbsb2"><i class="fa fa-users"></i><span class="w3-xlarge">Sponsors</span></a>
+			  <a href="#contact" class="nb nbi nbsb1"><i class="fa fa-phone"></i><span class="w3-xlarge">Contact</span></a>
+			  <a class="nb nb-main"><i class="fa fa-angle-double-down"></i></a>
+			</div>
+		<div class="container">
+			<header class="codrops-header">
+				<div class="deco" style="" aria-hidden="true">o</div>
+				<img class="image-1 w3-hide-small w3-hide-medium" src="./img/hacktrec.png" style="width: 20%">
+				<img class="image-1 w3-hide-large w3-hide-medium" src="./img/hacktrec.png" style="width: 65%">
+				<img class="image-1 w3-hide-small w3-hide-large" src="./img/hacktrec.png" style="width: 40%">
+			</header>
+			<h2 class="w3-center allerta w3-text-white w3-hide-medium" style="font-size: 400%;margin-top: -30px;word-spacing: 4px">HackTREC 2K17</h2>
+			<p class="w3-center neucha w3-xlarge">1st- 2nd November</p>
+			<p class="w3-center neucha w3-xlarge"><a  href="#sponsors"  >
+				Sponsored by: Kura 
+			</a></p>
+			<h2 class="w3-center allerta w3-text-white w3-hide-large w3-hide-small" style="font-size: 450%;margin-top: -10px;word-spacing: 4px">HackTREC 2K17</h2>
+		</div>
+		<div id="hacktrec-info" class="w3-row body-1">
+	        <div class="w3-col l6 w3-hide-small w3-hide-medium">
+		        <div class=" demo-crossword ">
+					<main class="w3-margin-left">
+						<section class="content content--layout">
+							<h2 class="word word--crossword">
+								<span class="word__main" data-column="1" data-row="4">HACKTREC</span>
+								<span class="word__cross" data-column="1" data-row="4">Hope</span>
+								<span class="word__cross" data-column="2" data-row="1">Capable</span>
+								<span class="word__cross" data-column="3" data-row="2">Decide</span>
+								<span class="word__cross" data-column="4" data-row="4">keen</span>
+								<span class="word__cross" data-column="5" data-row="1">worth</span>
+								<span class="word__cross" data-column="6" data-row="1">aware</span>
+								<span class="word__cross" data-column="7" data-row="1">Invest</span>
+								<span class="word__cross" data-column="8" data-row="1">Success</span>
+							</h2>
+						</section>
+					</main>
+		    	</div>
+		    </div>
+		    <div class="w3-col l6 w3-hide-small w3-hide-large" style="margin-left: 25vw; margin-top: 15vh">
+		        <div class=" demo-crossword ">
+					<main class="w3-margin-left">
+						<section class="content content--layout">
+							<h2 class="word word--crossword">
+								<span class="word__main" data-column="1" data-row="4">HACKTREC</span>
+								<span class="word__cross" data-column="1" data-row="4">Hope</span>
+								<span class="word__cross" data-column="2" data-row="1">Capable</span>
+								<span class="word__cross" data-column="3" data-row="2">decide</span>
+								<span class="word__cross" data-column="4" data-row="4">Keen</span>
+								<span class="word__cross" data-column="5" data-row="1">worth</span>
+								<span class="word__cross" data-column="6" data-row="1">aware</span>
+								<span class="word__cross" data-column="7" data-row="1">Invest</span>
+								<span class="word__cross" data-column="8" data-row="1">Success</span>
+							</h2>
+						</section>
+					</main>
+		    	</div>
+		    </div>
+		    <div class="w3-col l6" >
+		    	<div class="">
+			     	<section class="content-letter-style content--c7" >
+					   <div class="slideshow slideshow--7" data-effect="fx7">
+						 <div class="slide slide--current"><p class="title title--style-7"><span class="hover-effect">H</span><span class="hover-effect">a</span><span class="hover-effect">c</span><span class="hover-effect">k</span><span class="hover-effect">T</span><span class="hover-effect">R</span><span class="hover-effect">E</span><span class="hover-effect">C</span><span class="hover-effect"> i</span><span class="hover-effect">s</span><span class="hover-effect"> a</span><span class="hover-effect"> p</span><span class="hover-effect">l</span><span class="hover-effect">a</span><span class="hover-effect">c</span><span class="hover-effect">e</span><span class="hover-effect"> t</span><span class="hover-effect">o</span><span class="hover-effect"> i</span><span class="hover-effect">n</span><span class="hover-effect">n</span><span class="hover-effect">o</span><span class="hover-effect">v</span><span class="hover-effect">a</span><span class="hover-effect">t</span><span class="hover-effect">e</span><span class="hover-effect"> w</span><span class="hover-effect">i</span><span class="hover-effect">t</span><span class="hover-effect">h</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">t</span><span class="hover-effect"> a</span><span class="hover-effect">n</span><span class="hover-effect">y</span><span class="hover-effect"> d</span><span class="hover-effect">i</span><span class="hover-effect">s</span><span class="hover-effect">t</span><span class="hover-effect">r</span><span class="hover-effect">a</span><span class="hover-effect">c</span><span class="hover-effect">t</span><span class="hover-effect">i</span><span class="hover-effect">o</span><span class="hover-effect">n</span><span class="hover-effect">s.</span></p></div>
+
+						 <div class="slide"><h2 class="title title--style-7"><span class="hover-effect">Y</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect"> w</span><span class="hover-effect">i</span><span class="hover-effect">l</span><span class="hover-effect">l</span><span class="hover-effect"> h</span><span class="hover-effect">a</span><span class="hover-effect">v</span><span class="hover-effect">e</span><span class="hover-effect"> 3</span><span class="hover-effect">0</span><span class="hover-effect"> h</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">r</span><span class="hover-effect">s</span><span class="hover-effect"> t</span><span class="hover-effect">o</span><span class="hover-effect"> d</span><span class="hover-effect">e</span><span class="hover-effect">l</span><span class="hover-effect">v</span><span class="hover-effect">e</span><span class="hover-effect"> i</span><span class="hover-effect">n</span><span class="hover-effect">t</span><span class="hover-effect">o</span><span class="hover-effect"> y</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">r</span><span class="hover-effect"> c</span><span class="hover-effect">u</span><span class="hover-effect">r</span><span class="hover-effect">i</span><span class="hover-effect">o</span><span class="hover-effect">s</span><span class="hover-effect">i</span><span class="hover-effect">t</span><span class="hover-effect">i</span><span class="hover-effect">e</span><span class="hover-effect">s.</span></h2></div>
+
+						 <div class="slide"><h2 class="title title--style-7"><span class="hover-effect">L</span><span class="hover-effect">e</span><span class="hover-effect">a</span><span class="hover-effect">r</span><span class="hover-effect">n</span><span class="hover-effect"> s</span><span class="hover-effect">o</span><span class="hover-effect">m</span><span class="hover-effect">e</span><span class="hover-effect">t</span><span class="hover-effect">h</span><span class="hover-effect">i</span><span class="hover-effect">n</span><span class="hover-effect">g</span><span class="hover-effect"> n</span><span class="hover-effect">e</span><span class="hover-effect">w,</span><span class="hover-effect"> a</span><span class="hover-effect">n</span><span class="hover-effect">d</span><span class="hover-effect"> m</span><span class="hover-effect">a</span><span class="hover-effect">k</span><span class="hover-effect">e</span><span class="hover-effect"> s</span><span class="hover-effect">o</span><span class="hover-effect">m</span><span class="hover-effect">e</span><span class="hover-effect">t</span><span class="hover-effect">h</span><span class="hover-effect">i</span><span class="hover-effect">n</span><span class="hover-effect">g</span><span class="hover-effect"> a</span><span class="hover-effect">w</span><span class="hover-effect">e</span><span class="hover-effect">s</span><span class="hover-effect">o</span><span class="hover-effect">m</span><span class="hover-effect">e.</span></h2></div>
+
+						 <div class="slide"><h2 class="title title--style-7"><span class="hover-effect">M</span><span class="hover-effect">e</span><span class="hover-effect">e</span><span class="hover-effect">t</span><span class="hover-effect"> o</span><span class="hover-effect">t</span><span class="hover-effect">h</span><span class="hover-effect">e</span><span class="hover-effect">r</span><span class="hover-effect"> e</span><span class="hover-effect">n</span><span class="hover-effect">t</span><span class="hover-effect">h</span><span class="hover-effect">u</span><span class="hover-effect">s</span><span class="hover-effect">i</span><span class="hover-effect">a</span><span class="hover-effect">s</span><span class="hover-effect">t</span><span class="hover-effect">i</span><span class="hover-effect">c</span><span class="hover-effect"> h</span><span class="hover-effect">a</span><span class="hover-effect">c</span><span class="hover-effect">k</span><span class="hover-effect">e</span><span class="hover-effect">r</span><span class="hover-effect">s,</span><span class="hover-effect"> p</span><span class="hover-effect">u</span><span class="hover-effect">s</span><span class="hover-effect">h</span><span class="hover-effect"> y</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">r</span><span class="hover-effect"> b</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">n</span><span class="hover-effect">d</span><span class="hover-effect">a</span><span class="hover-effect">r</span><span class="hover-effect">i</span><span class="hover-effect">e</span><span class="hover-effect">s.</span> </h2></div>
+
+						 <div class="slide"><h2 class="title title--style-7"><span class="hover-effect">R</span><span class="hover-effect">e</span><span class="hover-effect">a</span><span class="hover-effect">l</span><span class="hover-effect">i</span><span class="hover-effect">z</span><span class="hover-effect">e</span><span class="hover-effect"> t</span><span class="hover-effect">h</span><span class="hover-effect">e</span><span class="hover-effect"> p</span><span class="hover-effect">r</span><span class="hover-effect">o</span><span class="hover-effect">j</span><span class="hover-effect">e</span><span class="hover-effect">c</span><span class="hover-effect">t</span><span class="hover-effect">s</span><span class="hover-effect"> o</span><span class="hover-effect">f</span><span class="hover-effect"> y</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect">r</span><span class="hover-effect"> d</span><span class="hover-effect">r</span><span class="hover-effect">e</span><span class="hover-effect">a</span><span class="hover-effect">m</span><span class="hover-effect">s!</span> </h2></div>
+						 <div class="slide"><h2 class="title title--style-7"><span class="hover-effect">S</span><span class="hover-effect">o,</span><span class="hover-effect"> w</span><span class="hover-effect">h</span><span class="hover-effect">a</span><span class="hover-effect">t</span><span class="hover-effect"> a</span><span class="hover-effect">r</span><span class="hover-effect">e</span><span class="hover-effect"> y</span><span class="hover-effect">o</span><span class="hover-effect">u</span><span class="hover-effect"> w</span><span class="hover-effect">a</span><span class="hover-effect">i</span><span class="hover-effect">t</span><span class="hover-effect">i</span><span class="hover-effect">n</span><span class="hover-effect">g</span><span class="hover-effect"> f</span><span class="hover-effect">o</span><span class="hover-effect">r?</span></h2></div>
+					   </div>
+						<nav id="register" class="actions">
+							<button class="btn btn--trigger btn--prev">Previous</button>
+							<button class="btn btn--trigger btn--next">Next</button>
+						</nav>
+					</section><!-- /content -->
+		       </div>
+
+		    </div>	
+        </div>
+        <!-- get the app-->
+        <div >
+		<div  class="w3-hide-large w3-hide-medium w3-center" style="margin-top: ; padding-top: 7%;padding-bottom: 27%;background-color: #fff ">
+		   <p class="w3-wide w3-text-black">START PACKING YOUR BAGS FOR THIS AWESOME ADVENTURE ON  <span class="w3-text-blue"> 19-OCT-2017 </span> @ ABES ENGG COLLEGE</p><br><br>
+		   <a href="www.google.com" class="w3-large w3-black w3-hover-light-grey w3-white w3-text-light-grey w3-wide w3-padding-large" style="text-decoration: none;margin-top: 0px;"> REGISTER  </a>
+		</div>
+
+		<div  class="w3-hide-small w3-center" style=" padding-top: 7%;padding-bottom: 5%;background-color: #fff ">
+		   <p class="w3-wide w3-text-black">START PACKING YOUR BAGS FOR THIS AWESOME ADVENTURE ON  <span class="w3-text-blue"> 19-OCT-2017 </span> @ ABES ENGG COLLEGE</p><br><br>
+		   <a href="www.google.com" class="w3-large w3-hover-grey w3-black w3-text-white w3-padding-large wow fadeInDown" data-wow-offset="300" style="text-decoration: none;margin-top: 0px;"> REGISTER  </a>
+		</div>
+        </div>
+        
+        <div class="sw-row" style="padding-top: 5%;padding-bottom: 25%;background-color: #fff">
+          <hr style="margin-left: 5%;margin-right: 5%;">
+		  <p style="text-transform: uppercase;font-size: 30px;text-align:center;letter-spacing: 4px" class="neucha">Keep Your Eyes on the</p>
+		  <p style="text-transform: uppercase;font-size: 50px;text-align:center;margin-top: -2%;font-weight: 400;margin-bottom: -5% ;font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;">Prize</p>
+			<div id="wrapper" class="wrapper sw-coll " >
+					<div class="front front-1">
+						<p class="p-1"><img style="cursor: pointer;" src="img/2nd-prize.png"/></p>
+					</div>
+					<div class="text_onclick-1 text_onclick" >
+						<p style="color: black">Prize for Software Winner</p>
+					</div>
+			</div>
+			
+			<div id="wrapper-2" class="wrapper-2 sw-coll w3-hide-small">
+			   <p>.</p>
+				<!-- 	<div class="front-2">
+						<p class="p-2"><img style="cursor: pointer;" src="img/1st-prize.png"/></p>
+					</div>
+					<div class="text_onclick-2 text_onclick" >
+						<p style="color: black">Hello</p>
+					</div> -->
+			</div>
+			<div id="wrapper-3" class="wrapper sw-coll" >
+					<div class="front front-3">
+						<p class="p-3"><img style="cursor: pointer;" src="img/3rd-prize.png"/></p>
+					</div>
+					<div class="text_onclick-3 text_onclick" >
+						<p style="color: black">Prize for Hardware Winner</p>
+					</div>
+			</div>
+			
+		</div>
+		<div id="sponsors" class="" style="background: url('./img/background3.jpg'); padding-top: 15%;padding-bottom: 8%;margin-top: 0px;width: 100%">
+			<div class="">
+			    <p class="w3-hide-large w3-hide-medium">.</p>
+				<h2 class="w3-hide-medium w3-hide-large neucha w3-text-white w3-xxxlarge w3-center" style="margin-top: 5vw;">
+					OUR SPONSORS
+				</h2>
+				<h2 class="w3-hide-small neucha w3-jumbo w3-text-white" style="position: absolute;left: 0px;margin-left: 10vh;">
+					OUR SPONSORS
+				</h2>
+			</div>
+			<div >
+			<div style="position: relative;overflow: hidden;width: 100%;">
+				<div class="deco deco--title"></div>
+				<div id="sponsor_slideshow" class="sponsor_slideshow">
+					<div class="sponsor_slide">
+						<h2 class="sponsor_slide__title sponsor_slide__title--preview">Kura India</h2>
+						<div class="sponsor_slide__item">
+							<div class="sponsor_slide__inner">
+								<img class="w3-hide-medium w3-hide-large sponsor_slide__img sponsor_slide__img--small" src="img/sponsor.gif" alt="Some image" />
+								<img class=" w3-hide-small sponsor_slide__img sponsor_slide__img--small" src="img/sponsor.jpg" alt="Some image" />
+								<button class="action action--open" aria-label="View details">+</button>
+							</div>
+						</div>
+						<div class="sponsor_slide__content">
+							<div class="sponsor_slide__content-scroller">
+								<img class="sponsor_slide__img sponsor_slide__img--large" src="img/sponsor.jpg" alt="Some image" />
+								<div class="sponsor_slide__details">
+									<h2 class="sponsor_slide__title sponsor_slide__title--main">Kura India</h2>
+									<img src="img/company-1.jpg" class="sponsor_slide__description">
+									<img src="img/company-2.jpg" class="sponsor_slide__description">
+									<img src="img/company-3.jpg" class="sponsor_slide__description">
+									<img src="img/company-4.jpg" class="sponsor_slide__description">
+						    	<div>
+										<span class="sponsor_slide__price sponsor_slide__price--large"></span>
+										<a href="" class="button button--buy" style="background-color: #fff"></a>
+									</div>
+								</div><!-- /slide__details -->
+							</div><!-- slide__content-scroller -->
+						</div><!-- slide__content -->
+					</div>
+					<button class="action action--close" aria-label="Close">x</i></button>
+				</div>
+			</div><!-- /container -->
+			</div>
+
+		</div>
+		<div style="background: url('./img/website3-2.jpg');width: 100%;padding-bottom: 40%; ">
+		</div>
+		<div class="w3-hide-small w3-hide-medium" style="background: url('./img/website5.jpg');padding-bottom: 40%;">
+			
+		</div>
+		<div id="contact" class=" w3-display-container w3-opacity-min" style="background: url('./img/background1.jpg');min-height: 400px;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+			  <div class="w3-display-middle">
+			     <span class="unica-one w3-jumbo w3-text-white w3-wide">CONTACT</span>
+			  </div>
+		</div>
+        <div style="background-color: #fff;padding-top: 2%;padding-bottom: 2%">
+        	<h2 class="neucha w3-text-black w3-wide w3-xxxlarge" style="text-align: center">
+					OUR TEAM
+			</h2>
+			 <hr style="margin-left: 5%;margin-right: 5%;">
+			 <div class="w3-row icon-wrap icon-effect-5 icon-effect-5a" style="margin-left: 25vw">
+				<div class="w3-container w3-col m4" >
+				  <p onclick="document.getElementById('id01').style.display='block'" ><i class="icon allerta fa fa-Ec">Event Coordiantor</i></p>
+                  <p style="cursor: pointer;" onclick="document.getElementById('id01').style.display='block'">Event Coordinators</p>
+				  <div id="id01" class="w3-modal">
+				    <div class="w3-modal-content w3-card-4">
+				      <header class="w3-container"> 
+				        <span onclick="document.getElementById('id01').style.display='none'" 
+				        class="w3-button w3-display-topright">&times;</span>
+				      </header>
+				      <div class="w3-container">
+				        <p>Abhishek Vats: abhishek.15bcs1067@abes.ac.in</p>
+				        <p>Nanidni Tayal: nandini.15bcs1033@abes.ac.in(9411694314)</p>
+				        <p>Anuranjan Bose: anuranjan.15bcs1060@abes.ac.in</p>
+				        <p>Harshit Pandey: harshitpandey678@gmail.com (9650959057)</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="w3-container w3-col m4" >
+				  <p onclick="document.getElementById('id02').style.display='block'" ><i class="icon allerta fa fa-Ev">Event Volunteers</i></p>
+                  <p style="cursor: pointer;" onclick="document.getElementById('id02').style.display='block'">Event Volunteers</p>
+				  <div id="id02" class="w3-modal">
+				    <div class="w3-modal-content w3-card-4">
+				      <header class="w3-container"> 
+				        <span onclick="document.getElementById('id02').style.display='none'" 
+				        class="w3-button w3-display-topright">&times;</span>
+				      </header>
+				      <div class="w3-container">
+				        <p>Geetanjali: geetanjanli.16bcs2043@abes.ac.in</p>
+				        <p>Sakshi Drabu: sakshi16bit.1110@abes.ac.in</p>
+				        <p>Pagati Pandey: pragati.16bcs2071@abes.ac.in</p>
+				        <p>Apoorv Singhal:</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</div>
+		 
+        </div>
+		<!-- Container (Contact Section) -->
+		<div style="background-color: #fff;width: 100%;">
+			<div class=" w3-content w3-container "  id="contact" >
+			  <h2 class="w3-center w3-large" style="margin-top: 10%">Designed by- <span class="w3-wide w3-xxlarge unica-one">HARSHIT PANDEY</span></h2>
+		     <p class="w3-center" style="cursor: pointer;" id="click_dropdown">Click Here <i class="fa fa-sort-down" style="font-size:24px "></i></p>
+			<div id="show_dropdown">  
+				  <p class="w3-center"><em>I'd love your feedback!</em></p>
+				  <div class="w3-row w3-padding-32 w3-section">
+				    <div class="w3-col m3 w3-container">
+				      <img src="./img/harshit_logo.png" style="width: 100%;margin-top: 12%">
+				    </div>
+				    <div class="w3-col m9 w3-panel">
+				      <div class="w3-large w3-margin-bottom">
+				        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: harshitpandey678@gmail.com<br>
+				      </div>
+				      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+				      <form action="/action_page.php" target="_blank">
+				        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+				          <div class="w3-half">
+				            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+				          </div>
+				          <div class="w3-half">
+				            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+				          </div>
+				        </div>
+				        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+				        <button class="w3-button w3-right w3-section" type="submit" style="background-color: #3f3f3f;color: #fff">
+				          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+				        </button>
+				      </form>
+				    </div>
+				  </div>
+			  </div>
+			</div>
+        </div> 
+		<!--<div class="">
+			<img src="./img/poster.jpg" class="w3-hide-small w3-hide-medium" style="width: 100%">
+			<img src="./img/poster.jpg" class="w3-hide-large " style="width: 150%">
+		</div>
+		<div class="w3-row background" style="padding-bottom: 30%;padding-top: 19%"> 
+			<div class="w3-col l6">
+				.
+			</div>
+			<div class="w3-col l6">
+				<a class="w3-right center w3-xlarge w3-round-large w3-padding-large" style="background-color: #A9A9A9;margin-right: 25%;" href="www.google.com">REGISTER</a>
+			</div>
+		</div>-->
+		<!-- /container -->
+        <script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		var modal1 = document.getElementById('id02');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		    if (event.target == modal1) {
+		        modal1.style.display = "none";
+		    }
+		}
+		</script>
+		<script>
+		(function() {
+			var decoLetter = new Letters(document.querySelector('.deco'), {	
+				size: 1000,
+				weight: 5,
+				color: 'white',
+				//color: '#63646B',
+				duration: 2,
+				fade:0,
+				easing: d3_ease.easeExpOut.ease
+			});
+			decoLetter.hideInstantly();
+			setTimeout(function() {
+				decoLetter.show();
+			}, 200);
+		})();
+		</script>
+
+
+		<script src="js/charming.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/demo7.js"></script>
+		<script src="js/mo.min.js"></script>
+		<script src="js/demo-1.js"></script>
+		<script src="js/textfx.js"></script>
+		<script src="js/sponsor_classie.js"></script>
+		<script src="js/sponsor_dynamics.min.js"></script>
+		<script src="js/sponsor_main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/appshowcase.js"></script>
+		<script>
+			$(function() {
+				Showcase.init();
+			});
+		</script>
+		<script>
+			(function() {
+				document.documentElement.className = 'js';
+				var slideshow = new CircleSlideshow(document.getElementById('sponsor_slideshow'));
+			})();
+		</script>
+		<script>
+		(function() {
+			
+			
+			// Slide obj: each Slideshow´s slide will contain the HTML element and the instance of TextFx.
+			var Slide = function(el) {
+					this.el = el;
+					this.txt = new TextFx(this.el.querySelector('.title'));
+				},
+				// The Slideshow obj.
+				Slideshow = function(el) {
+					this.el = el;
+					this.current = 0;
+					this.slides = [];
+					var self = this;
+					[].slice.call(this.el.querySelectorAll('.slide')).forEach(function(slide) {
+						self.slides.push(new Slide(slide));
+					});
+					this.slidesTotal = this.slides.length;
+					this.effect = this.el.getAttribute('data-effect');
+				};
+
+			Slideshow.prototype._navigate = function(direction) {
+				if( this.isAnimating ) {
+					return false;
+				}
+				this.isAnimating = true;
+
+				var self = this, currentSlide = this.slides[this.current];
+
+				this.current = direction === 'next' ? (this.current < this.slidesTotal - 1 ? this.current + 1 : 0) : (this.current = this.current > 0 ? this.current - 1 : this.slidesTotal - 1);
+				var nextSlide = this.slides[this.current];
+
+				var checkEndCnt = 0, checkEnd = function() {
+					++checkEndCnt;
+					if( checkEndCnt === 2 ) {
+						currentSlide.el.classList.remove('slide--current');
+						nextSlide.el.classList.add('slide--current');
+						self.isAnimating = false;
+					}
+				};
+				
+				// Call the TextFx hide method and pass the effect string defined in the data-effect attribute of the Slideshow element.
+				currentSlide.txt.hide(this.effect, function() {
+					currentSlide.el.style.opacity = 0;
+					checkEnd();
+				});
+				// First hide the next slide´s TextFx text.
+				nextSlide.txt.hide();
+				nextSlide.el.style.opacity = 1;
+				// And now call the TextFx show method.
+				nextSlide.txt.show(this.effect, function() {
+					checkEnd();
+				});
+			};
+
+			Slideshow.prototype.next = function() { this._navigate('next'); };
+
+			Slideshow.prototype.prev = function() { this._navigate('prev');	};
+
+
+
+			[].slice.call(document.querySelectorAll('.content-letter-style')).forEach(function(el, pos) {
+				var slideshow = new Slideshow(el.querySelector('.slideshow'));
+				el.querySelector('.actions').firstElementChild.addEventListener('click', function() { slideshow.prev(); });
+				el.querySelector('.actions').lastElementChild.addEventListener('click', function() { slideshow.next(); });
+
+				if( pos === 0 || pos === 2 || pos === 6 || pos === 11 || pos === 13 || pos === 14 ) {
+					var decoColor = getDecoColor(pos);
+					new LineMaker({
+						parent: {element: el, position: 'prepend'},
+						lines: pos % 2 === 0 ? [
+								{top: 0, left: '6%', width: 1, height: '100vh', color: decoColor},
+								{top: 0, left: '26%', width: 1, height: '100vh', color: decoColor},
+								{top: 0, left: '46%', width: 1, height: '100vh', color: decoColor},
+								{top: 0, left: '66%', width: 1, height: '100vh', color: decoColor},
+								{top: 0, left: '86%', width: 1, height: '100vh', color: decoColor}
+							] : [
+								{top: '20%', left: 0, width: '100vw', height: 1, color: decoColor},
+								{top: '40%', left: 0, width: '100vw', height: 1, color: decoColor},
+								{top: '60%', left: 0, width: '100vw', height: 1, color: decoColor},
+								{top: '80%', left: 0, width: '100vw', height: 1, color: decoColor}
+							]
+					});
+				}
+			});
+			
+			
+			var duration = 500, epsilon = (1000 / 60 / duration) / 4, easing1 = bezier(0.1, 1, 0.9, 1, epsilon);
+			anime.easings['myCustomEasing'] = function(t){ return easing1(t); };
+
+			document.querySelector('.btn--modal-trigger').addEventListener('click', openCredits);
+			modalCloseCtrl.addEventListener('click', closeCredits);
+
+			var paterEl = document.querySelector('.pater'),
+				pater = new TextFx(paterEl.querySelector('.pater__title')),
+				fxPater = {
+					in: {
+						duration: 400,
+						delay: function(el, index) { return 50+index*20; },
+						easing: 'easeOutExpo',
+						opacity: 1,
+						translateY: ['50%','0%']
+					},
+					out: {
+						duration: 400,
+						delay: function(el, index) { 
+							return index*20; 
+						},
+						easing: 'easeOutExpo',
+						opacity: 0,
+						translateY: '-50%'
+					}
+				};
+			
+			paterEl.addEventListener('mouseenter', function() {
+				pater.hide();
+				setTimeout(function() {
+					pater.show(fxPater);	
+				},60);
+			});
+			paterEl.addEventListener('mouseleave', function() {
+				pater.show();
+			});
+		})();
+	  </script>
+	</body>
 </html>
